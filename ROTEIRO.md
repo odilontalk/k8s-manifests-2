@@ -36,6 +36,7 @@ kubectl -n argocd apply -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 
 kubectl -n argocd get secret argocd-initial-admin-secret --template={{.data.password}} | base64 --decode
 # mUN9zcIFBZzRpWzM
+# A7q3C00xp6GOfeV2
 
 kubectl -n argocd port-forward svc/argocd-server 8080:443
 

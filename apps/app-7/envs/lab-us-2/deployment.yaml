@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-6
+  name: app-7
 spec:
   replicas: 1
   template:
     spec:
       containers:
-        - name: app-6
+        - name: app-7
           image: odilontalk/sample-app:latest
           env:
           - name: ENV

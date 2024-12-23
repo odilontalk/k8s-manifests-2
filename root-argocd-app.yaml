@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/odilontalk/k8s-manifests.git
+    repoURL: https://github.com/odilontalk/k8s-manifests-2.git
     targetRevision: HEAD
     path: appsets
   destination:

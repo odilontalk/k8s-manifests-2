@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-5
+  name: app-4
 spec:
   replicas: 1
   template:
     spec:
       containers:
-        - name: app-5
+        - name: app-4
           image: odilontalk/sample-app:latest
           env:
           - name: ENV
-            value: "homol-us-1"
+            value: "homol-sa-1"
           - name: IDP_ENDPOINT
-            value: "homol-us-1"
+            value: "homol-sa-1"

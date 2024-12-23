@@ -8,7 +8,7 @@ spec:
   goTemplateOptions: ["missingkey=error"]
   generators:
   - git:
-      repoURL: https://github.com/odilontalk/k8s-manifests.git
+      repoURL: https://github.com/odilontalk/k8s-manifests-2.git
       revision: HEAD
       directories:
       - path: apps/*/envs/ti-us-1
@@ -22,7 +22,7 @@ spec:
 
       # Source of the application manifests
       source:
-        repoURL: https://github.com/odilontalk/k8s-manifests.git
+        repoURL: https://github.com/odilontalk/k8s-manifests-2.git
         targetRevision: HEAD
         path: '{{.path.path}}'
       
