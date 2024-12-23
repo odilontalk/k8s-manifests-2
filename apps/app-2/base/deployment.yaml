@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-2
+  template:
+    metadata:
+      labels:
+        app: app-2
+    spec:
+      containers:
+        - name: app-2
+          imagePullPolicy: Always
+          image: odilontalk/sample-app:latest
+          ports:
+            - containerPort: 5000

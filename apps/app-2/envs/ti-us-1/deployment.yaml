@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-2
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+        - name: app-2
+          image: odilontalk/sample-app:latest
+          env:
+          - name: ENV
+            value: "ti-us-1"
+          - name: IDP_ENDPOINT
+            value: "idp-ti-us-1"
