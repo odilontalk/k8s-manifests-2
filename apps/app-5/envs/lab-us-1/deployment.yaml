@@ -11,6 +11,6 @@ spec:
           image: odilontalk/sample-app:latest
           env:
           - name: ENV
-            value: "homol-us-1"
+            value: "lab-us-1"
           - name: IDP_ENDPOINT
-            value: "homol-us-1"
+            value: "idp-lab-us-1"
